@@ -5,12 +5,21 @@ import { TURNS } from './constants.js'
 import { checkWinner, checkEndGame } from './logic/board.js'
 import './index.css'
 import { WinnerModal } from './components/WinnerModal.jsx'
+import { saveGameToStorage, resetGameToStorage } from './logic/storage/index.js'
 
 function App () {
-  const [board, setBoard] = useState(
-    Array(9).fill(null)
-  )
-  const [turn, setTurn] = useState(TURNS.X)
+  const [board, setBoard] = useState(() => {
+    const boardFromStorage = window.localStorage.getItem('board')
+    if (boardFromStorage) return JSON.parse(boardFromStorage)
+    return Array(9).fill(null)
+    // return boardFromStorage ? JSON.parse(boardFromStorage) : Array(9).fill(null)
+  })
+  const [turn, setTurn] = useState(() => {
+    const turnFromStorage = window.localStorage.getItem('turn')
+    // si no hay turnFromStorage va con el por defecto (TURNS.X)
+    // ?? mira si es null o undefined // || mira si es false
+    return turnFromStorage ?? TURNS.X
+  })
   // null es que no hay ganador, false es que hay un empate
   const [winner, setWinner] = useState(null)
 
@@ -18,6 +27,8 @@ function App () {
     setBoard(Array(9).fill(null))
     setTurn(TURNS.X)
     setWinner(null)
+
+    resetGameToStorage()
   }
 
   const updateBoard = (index) => {
@@ -34,18 +45,17 @@ function App () {
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X
     setTurn(newTurn)
 
+    // guardar partida aqui
+    saveGameToStorage({
+      board: newBoard,
+      turn: newTurn
+    })
+
     // revisar si hay ganador
     const newWinner = checkWinner(newBoard)
     if (newWinner) {
       confetti()
       setWinner(newWinner) // actualiza el estado
-      /**
-       * setWinner((prevWinner) => {
-        console.log(`Ganador ${newWinner}, el anterior era ${prevWinner}`)
-        return newWinner
-      })
-       */
-      // alert(`el ganador es ${newWinner}`)
     } else if (checkEndGame(newBoard)) {
       setWinner(false) // empate
     }
