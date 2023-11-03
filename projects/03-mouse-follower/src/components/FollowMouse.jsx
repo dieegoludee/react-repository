@@ -5,11 +5,11 @@ const FollowMouse = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
-    console.log('efecto ', { enabled })
+    // console.log('efecto ', { enabled })
 
     const handleMove = (event) => {
       const { clientX, clientY } = event
-      console.log('handleMove', { clientX, clientY })
+      // console.log('handleMove', { clientX, clientY })
       setPosition({ x: clientX, y: clientY })
     }
     if (enabled) {
@@ -21,14 +21,14 @@ const FollowMouse = () => {
        * -> cuando cambian las dependencias, antes de ejecutar el efecto de nuevo
        */
     return () => {
-      console.log('cleanUp')
+      // console.log('cleanUp')
       window.removeEventListener('pointermove', handleMove)
     }
   }, [enabled])
 
   return (
     <main>
-      <h3>Proyecto 3</h3>
+      <h2 className='title'>Proyecto 3</h2>
       <div style={{
         position: 'absolute',
         backgroundColor: 'rgba(0, 0, 0, 0.4)',

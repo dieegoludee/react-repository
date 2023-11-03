@@ -33,6 +33,13 @@ body {
   min-height: 100vh;
 }
 
+.title {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
