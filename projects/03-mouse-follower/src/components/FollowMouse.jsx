@@ -31,7 +31,8 @@ const FollowMouse = () => {
       <h3>Proyecto 3</h3>
       <div style={{
         position: 'absolute',
-        backgroundColor: '#09f',
+        backgroundColor: 'rgba(0, 0, 0, 0.4)',
+        border: '1.5px solid #fff',
         borderRadius: '50%',
         opacity: 0.8,
         pointerEvents: 'none',
