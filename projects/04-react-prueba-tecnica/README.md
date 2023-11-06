@@ -21,9 +21,9 @@ APIs:
 - Crear archivo `vite.config.js`
 - Definir la configuración e importar el plugin de react
   
-  - import { defineConfig } from 'vite'
+  - `import { defineConfig } from 'vite'
     import react from '@vitejs/plugin-react'
 
     export default defineConfig({
       plugins: [react()]
-    })
+    })`
