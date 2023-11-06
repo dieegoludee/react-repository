@@ -20,10 +20,4 @@ APIs:
     - `npm install react react-dom -E`
 - Crear archivo `vite.config.js`
 - Definir la configuración e importar el plugin de react
-  
-  - `import { defineConfig } from 'vite'
-    import react from '@vitejs/plugin-react'
-
-    export default defineConfig({
-      plugins: [react()]
-    })`
+  ![vite-config-js](https://github.com/dieegoludee/react-repository/assets/127766535/4a08b8ff-e0ba-4c3c-8b56-df899406d0c8)
