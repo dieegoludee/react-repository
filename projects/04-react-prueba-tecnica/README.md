@@ -12,3 +12,18 @@ APIs:
 - Recupera un hecho aleatorio de gatos de la primera API.
 - Recuperar la primera parabra del hecho
 - Muestra una imagen de un gato con la primera palabra.
+
+# Levantar App sin dependencias con Vanilla JavaScript
+
+- Instalar dependencias necesarias para el proyecto:
+    - `npm install @vitejs/plugin-react -E`
+    - `npm install react react-dom -E`
+- Crear archivo `vite.config.js`
+- Definir la configuración e importar el plugin de react
+  
+  - `import { defineConfig } from 'vite'
+    import react from '@vitejs/plugin-react'
+
+    export default defineConfig({
+      plugins: [react()]
+    })`
