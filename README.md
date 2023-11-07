@@ -1,4 +1,7 @@
-# Proyectos con React + Vite + Standard JS
+# Proyectos con React + Vite with Standard JS
+
+![react-vite](https://github.com/dieegoludee/react-repository/assets/127766535/cbd0499c-528a-4c96-9719-0797460c8b1a)
+
 ***En el directorio '/projects' están todos los proyectos de React***
 
 > 01 - Twitter Follow Card.
