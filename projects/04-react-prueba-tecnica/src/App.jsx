@@ -1,32 +1,15 @@
-import { useEffect, useState } from 'react'
 import './App.css'
 import '../style.css'
-import { getRandomFact, getRandomImage } from './services/facts'
-
-// const CAT_ENDPOINT_IMAGE_URL = `https://cataas.com/cat/says/${firstWord}?fontSize=50&fontColor=red&json=true`
-// const CAT_PREFIX_IMAGE_URL = 'https://cataas.com'
+import { useCatImage } from './hooks/useCatImage'
+import { useCatFact } from './hooks/useCatFact'
+// import { Otro } from './components/Otro'
 
 export function App () {
-  const [fact, setFact] = useState()
-  const [imageUrl, setImageUrl] = useState()
-  // const [factError, setFactError] = useState()
-
-  // No se puede usar React Query, SWR, axios, apollo, etc
-  // Para recuperar la cita al cargar la página
-  useEffect(() => {
-    getRandomFact()
-      .then(newFact => setFact(newFact))
-  }, [])
-
-  // Para recuperar la imagen cada vez que tenemos una cita nueva
-  useEffect(() => {
-    getRandomImage(fact)
-      .then(newImage => setImageUrl(newImage))
-  }, [fact])
+  const { fact, refreshFact } = useCatFact()
+  const { imageUrl } = useCatImage({ fact })
 
   const handleClick = async () => {
-    const newFact = await getRandomFact()
-    setFact(newFact)
+    refreshFact()
   }
 
   return (
@@ -35,20 +18,14 @@ export function App () {
       <button onClick={handleClick}>Get new fact</button>
       <section>
         {/* renderizado condicional (&& abreviatura de if), si hay 'fact' lo muestra, sino no */}
-        {fact && <p>{fact}</p>}
-        {imageUrl && <img src={imageUrl} alt={`Image extracted using the first three words for ${fact}`} />}
+        {fact ? <p>{fact}</p> : <span><strong>Cargando fact...</strong></span>}
+        {imageUrl
+          ? <img src={imageUrl} alt={`Image extracted using the first three words for ${fact}`} />
+          : <span><strong>Cargando imagen...</strong></span>}
         {/* {factError && <p>{factError}</p>} */}
+
+        {/* <Otro /> */}
       </section>
     </main>
   )
 }
-
-// useEffect(() => {
-//   async function getRandomFact () {
-//     const res = await fetch(CAT_ENDPOINT_RANDOM_FACT)
-//     const json = await res.json()
-//     setFact(json.fact)
-//   }
-
-//   getRandomFact()
-// }, [])

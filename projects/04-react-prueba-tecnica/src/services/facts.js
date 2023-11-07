@@ -7,7 +7,7 @@ export const getRandomFact = async () => {
   return fact
 }
 
-export const getRandomImage = async (fact) => {
+export const getRandomImage = async ({ fact }) => {
   if (!fact) return
   // Recuperar primeras 3 palabras de fact
   // const firstWord = fact.split(' ').slice(0, 3).join(' ')
