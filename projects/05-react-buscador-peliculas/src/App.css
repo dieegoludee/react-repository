@@ -24,6 +24,13 @@ form {
   justify-content: center;
 }
 
+h1 {
+  position: relative;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-bottom: 20px;
+}
+
 .error {
   color: red;
 }
