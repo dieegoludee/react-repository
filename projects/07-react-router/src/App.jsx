@@ -1,33 +1,25 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
-
-function HomePage () {
-  return (
-    <>
-      <h1>Home</h1>
-      <p>Esta es la página Home de ejemplo para crear un React Router desde cero</p>
-      <a href='/about'>Ir a sobre nosotros</a>
-    </>
-  )
-}
-
-function AboutPage () {
-  return (
-    <>
-      <h1>About</h1>
-      <img
-        src='https://res.cloudinary.com/practicaldev/image/fetch/s--rq2k992d--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/uoztlt50jlvdsizrvyz8.png'
-        width={350}
-        height={250}
-      />
-      <p>Esta es la página About de ejemplo para crear un React Router desde cero</p>
-      <a href='/'>Ir a home</a>
-    </>
-  )
-}
+import { EVENTS } from './consts'
+import HomePage from './pages/Home'
+import AboutPage from './pages/About'
 
 function App () {
   const [currentPath, setCurrentPath] = useState(window.location.pathname)
+
+  useEffect(() => {
+    const onLocationChange = () => {
+      setCurrentPath(window.location.pathname)
+    }
+
+    window.addEventListener(EVENTS.PUSHSTATE, onLocationChange)
+    window.addEventListener(EVENTS.POPSTATE, onLocationChange)
+
+    return () => {
+      window.removeEventListener(EVENTS.PUSHSTATE, onLocationChange)
+      window.removeEventListener(EVENTS.POPSTATE, onLocationChange)
+    }
+  }, [])
   return (
     <main>
       <h1>React Router</h1>
