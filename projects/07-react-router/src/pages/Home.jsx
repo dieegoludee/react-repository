@@ -1,11 +1,11 @@
-import { navigate } from '../Link'
+import { Link } from '../components/Link'
 
 function Home () {
   return (
     <>
       <h1>Home</h1>
       <p>Esta es la página Home de ejemplo para crear un React Router desde cero</p>
-      <button onClick={() => navigate('/about')}>Ir a sobre nosotros</button>
+      <Link to='/about'>Ir a sobre nosotros</Link>
     </>
   )
 }

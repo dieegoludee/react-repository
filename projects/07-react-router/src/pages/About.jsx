@@ -1,4 +1,4 @@
-import { navigate } from '../Link'
+import { Link } from '../components/Link'
 
 function About () {
   return (
@@ -10,7 +10,7 @@ function About () {
         height={250}
       />
       <p>Esta es la página About de ejemplo para crear un React Router desde cero</p>
-      <button onClick={() => navigate('/')}>Ir a home</button>
+      <Link to='/'>Ir a home</Link>
     </>
   )
 }
