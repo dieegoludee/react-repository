@@ -10,4 +10,10 @@
 
 > 03 - Mouse Follow.
 
-> 04 - Prueba técnica de React (Junior y Trainee).
+> 04 - Prueba técnica de React (Promesas, fetching y testing E2E).
+
+> 05 - Prueba técnica de React (Buscador de películas).
+
+> 06 - Shopping Cart.
+
+> 07 - React Router + Lazy Loading.
