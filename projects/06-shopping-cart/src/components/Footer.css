@@ -16,6 +16,11 @@
   opacity: 0.8;
 }
 
+.footer img {
+  border: 0.1px solid rgb(55, 175, 255);
+  border-radius: 50%;
+}
+
 .footer h4,
 .footer h5 {
   margin: 0;

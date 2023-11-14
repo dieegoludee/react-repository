@@ -1,15 +1,23 @@
-import { createContext } from 'react'
+import { createContext, useState } from 'react'
 
+// Singleton -> Módulo de JavaScript |>
 // 1. Crear el contenido
-export const FiltersContext = createContext()
+// Este es el que tenemos que consumir
+export const FiltersContext = createContext() // SOLO SE CREA UNA VEZ
 
 // 2. Crear el Provider, para proveer el contexto
+// Este es el que nos provee de acceso al contexto
 export function FiltersProvider ({ children }) {
+  const [filters, setFilters] = useState({
+    category: 'all',
+    minPrice: 0
+  })
+
   return (
     <FiltersContext.Provider value={{
       // 3. Definir el estado inicial
-      category: 'all',
-      minPrice: 0
+      filters,
+      setFilters
     }}
     >{children}
     </FiltersContext.Provider>
