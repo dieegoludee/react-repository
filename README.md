@@ -1,4 +1,4 @@
-# Proyectos con React + Vite with Standard JS
+# Proyectos con React + Vite with linter Standard JS
 
 ![react-vite](https://github.com/dieegoludee/react-repository/assets/127766535/cbd0499c-528a-4c96-9719-0797460c8b1a)
 
@@ -17,3 +17,7 @@
 > 06 - Shopping Cart.
 
 > 07 - React Router + Lazy Loading.
+
+> 08 - TODO App con TypeScript.
+
+> 09 - Clon de Google Translate (React, TypeScript, ChatGPT + ViteTest
