@@ -1,6 +1,6 @@
 import FollowMouse from './components/FollowMouse'
 
-function App () {
+function App() {
   return (
     <>
       <FollowMouse />
