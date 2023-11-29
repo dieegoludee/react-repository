@@ -14,5 +14,5 @@
 | `06`  | Creación de un ecommerce con carrito de compras  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/06-shopping-cart)  | [Visitar]()  |
 | `07`  | Creación de un React Router desde cero  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/07-react-router)  | [Visitar]()  |
 | `08`  | Todo App con TypeScript y animaciones  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/08-todo-app-ts)  | [Visitar]()  |
-| `10`  | Crear un CRUD con Redux Toolkit y TypeScript  | [Ver]()  | [Visitar]()  |
-| `11`  | Prueba Técnica con TypeScript y React  | [Ver]()  | [Visitar]()  |
+| `10`  | Crear un CRUD con Redux Toolkit y TypeScript  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/10-crud-react-redux)  | [Visitar]()  |
+| `11`  | Prueba Técnica con TypeScript y React  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/11-typescript-prueba-tecnica)  | [Visitar]()  |
