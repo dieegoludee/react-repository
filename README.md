@@ -7,7 +7,7 @@
 | Número  | Proyecto | Código | Visitar |
 | ------------- | ------------- | ------------- | ------------- |
 | `01`  | Twitter Follow Card  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/01-twitter-card)  | [Visitar](https://01-twitter-card.surge.sh/)  |
-| `02`  | Tic Tac Toe  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/02-tic-tac-toe)  | [Visitar]()  |
+| `02`  | Tic Tac Toe  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/02-tic-tac-toe)  | [Visitar](https://02-tictactoe.surge.sh/)  |
 | `03`  | Mouse Follower  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/03-mouse-follower)  | [Visitar]()  |
 | `04`  | Prueba técnica con Promesas, fetching y testing E2E  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/04-react-prueba-tecnica)  | [Visitar]()  |
 | `05`  | Prueba técnica con formularios, buscador utilizando una API  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/05-react-buscador-peliculas)  | [Visitar]()  |
