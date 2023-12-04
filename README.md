@@ -13,6 +13,6 @@
 | `05`  | Prueba técnica con formularios, buscador utilizando una API  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/05-react-buscador-peliculas)  | [Visitar](https://05-buscador-peliculas.surge.sh/)  |
 | `06`  | Creación de un ecommerce con carrito de compras  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/06-shopping-cart)  | [Visitar](https://06-shopping-cart.surge.sh/)  |
 | `07`  | Creación de un React Router desde cero  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/07-react-router)  | [Visitar](https://07-react-router.surge.sh/)  |
-| `08`  | Todo App con TypeScript y animaciones  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/08-todo-app-ts)  | [Visitar]()  |
-| `10`  | Crear un CRUD con Redux Toolkit y TypeScript  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/10-crud-react-redux)  | [Visitar]()  |
-| `11`  | Prueba Técnica con TypeScript y React  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/11-typescript-prueba-tecnica)  | [Visitar]()  |
+| `08`  | Todo App con TypeScript y animaciones  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/08-todo-app-ts)  | [Visitar](https://08-todo-app.surge.sh/)  |
+| `10`  | Crear un CRUD con Redux Toolkit y TypeScript  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/10-crud-react-redux)  | [Visitar](https://10-crud-redux.surge.sh/)  |
+| `11`  | Prueba Técnica con TypeScript y React  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/11-typescript-prueba-tecnica)  | [Visitar](https://11-prueba-tecnica-typescript.surge.sh/)  |
