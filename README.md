@@ -16,4 +16,4 @@
 | `08`  | Todo App con TypeScript y animaciones  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/08-todo-app-ts)  | [Visitar](https://08-todo-app.surge.sh/)  |
 | `10`  | Crear un CRUD con Redux Toolkit y TypeScript  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/10-crud-react-redux)  | [Visitar](https://10-crud-redux.surge.sh/)  |
 | `11`  | Prueba Técnica con TypeScript y React  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/11-typescript-prueba-tecnica)  | [Visitar](https://11-prueba-tecnica-typescript.surge.sh/)  |
-| `12`  | JavaScript Quizz con TypeScript  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/11-typescript-prueba-tecnica)  | [Visitar]()  |
+| `12`  | JavaScript Quizz con TypeScript  | [Ver](https://github.com/dieegoludee/react-repository/tree/main/projects/12-javascript-quizz)  | [Visitar](https://12-javascript-quizz.surge.sh/)  |
